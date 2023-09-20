@@ -1,0 +1,25 @@
+.news-section{
+    background-color: #f3f7fa;
+}
+.news-section img{
+    width: inherit;
+    padding-top: 30px;
+}
+select{
+    margin-top: 50px;
+    border-radius: 20px;
+    padding:10px 20px;
+}
+.articles-section{
+    margin-top: 50px;
+}
+.card{
+    background-color: #f3f7fa;
+}
+.btn{
+    margin-left: 10px;
+}
+
+
+
+  

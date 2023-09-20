@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #2a3797;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar{
+    padding-left: 30px;
+    background-color: #f3f7fa;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.description {
+    text-align: center;
+    color: #4f5cc2;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 80px;
+}
+
+.description h2 {
+    font-weight: 300;
+    font-size: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+.description h1 {
+    background: linear-gradient(90deg, #001fff, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    padding-top: 20px;
+}
+

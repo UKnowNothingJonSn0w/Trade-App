@@ -1,0 +1,40 @@
+
+<div class="row news-section">
+    <div class="col-lg-6 col-sm-12 description">
+        <h1>News</h1>
+         <h2>Financial markets often react to important events such as central bank decisions, employment reports, election results, international conflicts, and so on. Investors who follow the news can adjust their investment strategies based on these events</h2> 
+        <div class="source-select">
+            <select [(ngModel)]="selectedSource" (change)="onSourceChange()">
+              <option value="" disabled selected>News source</option>
+              <option *ngFor="let source of mSources" [value]="source.id">{{ source.name }}</option>
+            </select>
+          </div>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+        <img src="assets/news.jpg" alt="newspaper icon">
+    </div>
+</div>
+<div class="row articles-section">
+    <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let article of mArticles">
+      <div class="card mb-3">
+        <div class="card-header">
+          <div class="avatar" [ngStyle]="{'background-image': 'url(../assets/images/' + article.source.id + '.png)'}"></div>
+          <h5 class="card-title">{{ article.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ article.source.name }}</h6>
+        </div>
+        <img class="card-img-top img-article" [src]="article.urlToImage" alt="">
+        <div class="card-body">
+          <p class="card-text">{{ article.description }}</p>
+        </div>
+        <div class="card-footer action-buttons">
+          <button class="btn btn-info">Likes</button>
+          <button class="btn btn-info">Comments</button>
+          <button class="btn btn-info">Share</button>
+          <a class="btn btn-info" [href]="article.url" target="_blank">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
